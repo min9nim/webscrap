@@ -5,7 +5,10 @@
     {
       "src": "/webscrap",
       "dest": "/src/index.js",
-      "methods": ["POST"]
+      "methods": ["POST", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
     }
   ]
 }
