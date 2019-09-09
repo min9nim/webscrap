@@ -12,6 +12,7 @@ post['/'] = async (req, res) => {
   console.log("req.body.url = " + req.body.url);
   try {
     if(cache[req.body.url]){
+      console.log('[hit]', req.body.url)
       return res.jsonp(cache[req.body.url])
     }
     let result = await webscrap(req.body.url);
