@@ -1,9 +1,10 @@
 ### webscrap
 webscrap is a micro service for url meta information
 
+<br>
+
 ### Usage
-You can call webscrap api anywhere
-- support CORS
+You can call webscrap api anywhere(CORS supported)
 
 ```javascript
 fetch(
@@ -11,12 +12,11 @@ fetch(
   {
     method: 'POST', 
     headers:{
-    'Content-Type': 'application/json'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       url: 'https://news.v.daum.net/v/20190910074818849'
     }),
-
   }
 ).then(res => res.json()).then(console.log)
 ``` 
