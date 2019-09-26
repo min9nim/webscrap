@@ -1,4 +1,4 @@
-const Crawler = require("node-webcrawler");
+const Crawler = require("crawler");
 const {_bodyScrap} = require("./com");
 
 const c = new Crawler({
