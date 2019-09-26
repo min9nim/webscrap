@@ -7,6 +7,7 @@ const c = new Crawler({
 });
 
 function queue(url) {
+    console.log({url})
     return new Promise(function (resolve, reject) {
         c.queue({
             uri: url,
@@ -16,13 +17,14 @@ function queue(url) {
              * 아래와 같이 userAgent 를 설정하면 매일경제쪽 긁어올 때 title 을 가져오지 못함
              */
             //userAgent: "Nodejs webcrawler",
-            callback: (err, res, $) => resolve({ err, res, $ })
+            callback: (err, res, done) => resolve({err, res, done})
         })
     })
 }
 
-const webscrap = (url) => queue(url).then(({ err, res, $ }) => {
+const webscrap = (url) => queue(url).then(({err, res, done}) => {
     // console.log("res.url = " + res.url)
+    // console.log({res})
     //console.log("res.statusCode = " + res.statusCode)
     //console.log("res.statusCode = " + res.body);
     //console.log(JSON.stringify(res, null, 2))
@@ -31,7 +33,7 @@ const webscrap = (url) => queue(url).then(({ err, res, $ }) => {
         //console.log(error);
         throw err
     } else {
-      return Object.assign(_bodyScrap(url)($), {url});
+      return Object.assign(_bodyScrap(url)(res.$), {url});
     }
 })
 

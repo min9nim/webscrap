@@ -12,8 +12,6 @@ function _getProtocol(url) {
 
 function sendErr(res) {
     return err => {
-        //console.log(err);
-        console.log("Login required")
         res.status(200).send({
             status: "Fail",
             message: err.toString()
@@ -32,7 +30,7 @@ function _bodyScrap(url) {
             }
         }
 
-        // console.log("@@ title = " + title)
+        console.log("@@ title = " + title)
 
         // 글이미지
         let image = $("meta[property='og:image']").attr("content");
@@ -128,7 +126,7 @@ function redisWrapper(fn) {
 
 
 /**
- * myRedis 초기화 작업 
+ * myRedis 초기화 작업
  */
 // function clearRedis(req, res, next) {
 //     console.log("@@ CUD 처리시 redis 초기화")

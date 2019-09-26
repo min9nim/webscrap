@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node src/index.js",
     "build": "node build.js"
   },
   "license": "MIT",
@@ -12,7 +12,6 @@
     "cors": "^2.8.5",
     "crawler": "^1.2.1",
     "express": "^4.17.1",
-    "morgan": "^1.9.1",
-    "node-webcrawler": "^0.8.0"
+    "morgan": "^1.9.1"
   }
 }
