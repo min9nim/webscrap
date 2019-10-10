@@ -50,19 +50,18 @@ function _bodyScrap(url) {
     }
 
     // 파비콘
-    let favicon
+    let favicon = ''
     let faviconPath = $('link[rel="shortcut icon"]').attr("href");
     if(!faviconPath){
       faviconPath = $('link[rel="mask-icon"]').attr("href");
     }
-    if(!faviconPath){
-      favicon = ''
-    }
-    if(!faviconPath.startsWith('http')){
+    if(faviconPath.startsWith('http')){
+      favicon = faviconPath
+    }else{
       favicon = faviconPath.startsWith("//")
       ? protocol + faviconPath.slice(2)
       : protocol + host + faviconPath    
-    }    
+    }
     
     // 글요약본
     let desc = $("meta[property='og:description']").attr("content");
