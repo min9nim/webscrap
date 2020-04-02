@@ -58,12 +58,14 @@ function _bodyScrap(url) {
     if (!faviconPath) {
       faviconPath = $('link[rel="icon"]').attr('href')
     }
-    if (faviconPath.startsWith('http')) {
-      favicon = faviconPath
-    } else {
-      favicon = faviconPath.startsWith('//')
-        ? protocol + faviconPath.slice(2)
-        : protocol + host + faviconPath
+    if (faviconPath) {
+      if (faviconPath.startsWith('http')) {
+        favicon = faviconPath
+      } else {
+        favicon = faviconPath.startsWith('//')
+          ? protocol + faviconPath.slice(2)
+          : protocol + host + faviconPath
+      }
     }
 
     // 글요약본
