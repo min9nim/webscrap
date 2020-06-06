@@ -7,9 +7,10 @@ const c = new Crawler({
 })
 
 function queue(url) {
-  console.log('original url: ' + url)
+  const $l = global.$logger
+  $l.verbose('original url: ' + url)
   const uri = encodeURI(url)
-  console.log('encodeURI(url): ' + uri)
+  $l.verbose('encodeURI(url): ' + uri)
   return new Promise(function (resolve, reject) {
     c.queue({
       uri,

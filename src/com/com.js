@@ -10,7 +10,7 @@ function _getProtocol(url) {
 }
 
 function sendErr(res) {
-  return err => {
+  return (err) => {
     res.status(200).send({
       status: 'Fail',
       message: err.toString(),
@@ -19,7 +19,8 @@ function sendErr(res) {
 }
 
 function _bodyScrap(url) {
-  return function($) {
+  return function ($) {
+    $l = global.$logger
     const protocol = _getProtocol(url)
     const host = _getHostname(url)
     // 글제목
@@ -30,8 +31,6 @@ function _bodyScrap(url) {
         throw Error('This link has no title')
       }
     }
-
-    console.log('@@ title = ' + title)
 
     // 글이미지
     let image = $("meta[property='og:image']").attr('content')
@@ -74,6 +73,13 @@ function _bodyScrap(url) {
       desc = ''
     }
 
+    $l.verbose({
+      title,
+      image,
+      desc,
+      favicon,
+    })
+
     return {
       title,
       image,
@@ -84,16 +90,16 @@ function _bodyScrap(url) {
 }
 //_bodyScrap = $ => _bodyScrap($, _getProtocol, _getHostname);
 
-const timelog = (function() {
+const timelog = (function () {
   let time = []
   let o = {
-    start: function() {
+    start: function () {
       time = [Date.now()]
       console.log(
         '[timelog] start: ' + new Date(time[0]).toString().substr(0, 24),
       )
     },
-    check: function() {
+    check: function () {
       time.push(Date.now())
       let diff = time[time.length - 1] - time[time.length - 2]
       console.log('[timelog] + ' + diff + 'ms')
@@ -102,17 +108,17 @@ const timelog = (function() {
   return o
 })()
 
-const myRedis = (function() {
+const myRedis = (function () {
   let cache = {}
 
   let o = {
-    get: function(key) {
+    get: function (key) {
       return cache[key]
     },
-    set: function(key, val) {
+    set: function (key, val) {
       return (cache[key] = val)
     },
-    clear: function() {
+    clear: function () {
       console.log('@@ redis cache 초기화')
       cache = {}
     },
@@ -121,7 +127,7 @@ const myRedis = (function() {
 })()
 
 function redisWrapper(fn) {
-  return async function(cond, idx, cnt) {
+  return async function (cond, idx, cnt) {
     timelog.start()
     let key = JSON.stringify({ cond, idx, cnt })
     let cache = myRedis.get(key)

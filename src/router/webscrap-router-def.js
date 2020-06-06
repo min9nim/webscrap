@@ -12,13 +12,13 @@ post['/'] = async (req, res) => {
   const $l = global.$logger
   $l.verbose('req.body.url = ' + req.body.url)
   try {
-    console.log({ cache })
+    $l.log({ cache })
     if (cache[req.body.url]) {
-      console.log('[hit]', req.body.url)
+      $l.log('[hit]', req.body.url)
       res.jsonp(cache[req.body.url])
       return
     }
-    console.log('[no-hit]', req.body.url)
+    $l.log('[no-hit]', req.body.url)
     let result = await webscrap(req.body.url)
     cache[req.body.url] = result
     res.jsonp(result)
