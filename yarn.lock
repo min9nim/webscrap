@@ -478,6 +478,11 @@ iconv-lite@0.4.24, iconv-lite@^0.4.8:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
+if-logger@^0.12.4:
+  version "0.12.4"
+  resolved "https://registry.yarnpkg.com/if-logger/-/if-logger-0.12.4.tgz#133c1b11aa1a079ba9b1d072567957e4cda69dcb"
+  integrity sha512-1XWVN8T8Y+H3ehToemFgaySkcThodPWnGmGZNiWlXKx41b5YO8En+BbSxQ6svKNc8rEzsW4fgXxq+KtClorzXg==
+
 inherits@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
@@ -629,6 +634,11 @@ mime@1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
+
+moment@^2.26.0:
+  version "2.26.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.26.0.tgz#5e1f82c6bafca6e83e808b30c8705eed0dcbd39a"
+  integrity sha512-oIixUO+OamkUkwjhAVE18rAMfRJNsNe/Stid/gwHSOfHrOtw9EhAY2AHvdKZ/k/MggcYELFCJz/Sn2pL8b8JMw==
 
 morgan@^1.9.1:
   version "1.9.1"
