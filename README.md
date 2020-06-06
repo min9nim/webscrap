@@ -1,27 +1,29 @@
 ### webscrap
+
 webscrap is a micro service for url meta information
 
 <br>
 
 ### Usage
+
 You can call webscrap api anywhere(CORS supported)
 
 ```javascript
-fetch(
-  'https://webscrap.min1.now.sh/webscrap', 
-  {
-    method: 'POST', 
-    headers:{
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      url: 'https://news.v.daum.net/v/20190910074818849'
-    }),
-  }
-).then(res => res.json()).then(console.log)
-``` 
+fetch('https://webscrap.now.sh/webscrap', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    url: 'https://news.v.daum.net/v/20190910074818849',
+  }),
+})
+  .then((res) => res.json())
+  .then(console.log)
+```
 
 result is
+
 ```
 {
   "title": "[날씨] 중북부 강한 비..내일까지 '200mm↑' 호우",
