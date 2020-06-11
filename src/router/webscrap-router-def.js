@@ -12,6 +12,9 @@ post['/'] = async (req, res) => {
   const $l = global.$logger
   $l.verbose('req.body.url = ' + req.body.url)
   try {
+    if (req.body.url.indexOf('http') !== 0) {
+      throw Error('invaid url')
+    }
     $l.log({ cache })
     if (cache[req.body.url]) {
       $l.log('[hit]', req.body.url)
