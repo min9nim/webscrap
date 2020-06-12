@@ -1,6 +1,6 @@
 function _getHostname(url) {
   let start = url.indexOf('://') + 3
-  let end = url.indexOf('/', start)
+  let end = url.endsWith('/') ? -1 : url.length
   return url.slice(start, end)
 }
 
@@ -63,7 +63,7 @@ function _bodyScrap(url) {
       } else {
         favicon = faviconPath.startsWith('//')
           ? protocol + faviconPath.slice(2)
-          : protocol + host + faviconPath
+          : protocol + host + '/' + faviconPath
       }
     }
 
