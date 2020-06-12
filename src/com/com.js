@@ -1,13 +1,4 @@
-function _getHostname(url) {
-  let start = url.indexOf('://') + 3
-  let end = url.endsWith('/') ? -1 : url.length
-  return url.slice(start, end)
-}
-
-function _getProtocol(url) {
-  let end = url.indexOf('://') + 3
-  return url.slice(0, end)
-}
+const { getHostname, getProtocol } = require('mingutils')
 
 function sendErr(res) {
   return (err) => {
@@ -21,8 +12,8 @@ function sendErr(res) {
 function _bodyScrap(url) {
   return function ($) {
     $l = global.$logger
-    const protocol = _getProtocol(url)
-    const host = _getHostname(url)
+    const protocol = getProtocol(url)
+    const host = getHostname(url)
     // 글제목
     let title = $("meta[property='og:title']").attr('content')
     if (!title) {
@@ -88,7 +79,7 @@ function _bodyScrap(url) {
     }
   }
 }
-//_bodyScrap = $ => _bodyScrap($, _getProtocol, _getHostname);
+//_bodyScrap = $ => _bodyScrap($, getProtocol, getHostname);
 
 const timelog = (function () {
   let time = []
@@ -173,8 +164,8 @@ function isExpired(exp) {
 }
 
 module.exports = {
-  _getHostname,
-  _getProtocol,
+  getHostname,
+  getProtocol,
   _bodyScrap,
   sendErr,
   timelog,
