@@ -1,5 +1,5 @@
 const Crawler = require('crawler')
-const { _bodyScrap } = require('./com')
+const { bodyScrap } = require('./bodyScrap')
 
 const c = new Crawler({
   maxConnections: 10,
@@ -37,7 +37,7 @@ const webscrap = (url) =>
       //console.log(error);
       throw err
     } else {
-      return Object.assign(_bodyScrap(url)(res.$), { url })
+      return Object.assign(bodyScrap(url)(res.$), { url })
     }
   })
 

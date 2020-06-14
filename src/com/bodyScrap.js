@@ -1,6 +1,6 @@
 const { getHostname, getProtocol } = require('mingutils')
 
-function _bodyScrap(url) {
+module.exports = (url) => {
   return function ($) {
     $l = global.$logger
     const protocol = getProtocol(url)
@@ -70,5 +70,3 @@ function _bodyScrap(url) {
     }
   }
 }
-
-module.exports = _bodyScrap
