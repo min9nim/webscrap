@@ -25,8 +25,10 @@ module.exports = (url) => {
         // image 경로가 / 로 시작한다면
         //let urlObj = new URL(url);
         image = protocol + host + image
+      } else if (image.startsWith('data:')) {
+        // base64 문자열이라면 그대로 사용
       } else {
-        image = ''
+        image = '[error] unknown image'
       }
     }
 
