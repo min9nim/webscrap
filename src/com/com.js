@@ -90,7 +90,6 @@ function isExpired(exp) {
 }
 
 module.exports = {
-  _bodyScrap,
   sendErr,
   timelog,
   myRedis,

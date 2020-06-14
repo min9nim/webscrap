@@ -1,5 +1,5 @@
 const Crawler = require('crawler')
-const { bodyScrap } = require('./bodyScrap')
+const bodyScrap = require('./bodyScrap')
 
 const c = new Crawler({
   maxConnections: 10,
