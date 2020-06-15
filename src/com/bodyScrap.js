@@ -2,7 +2,7 @@ const { getHostname, getProtocol } = require('mingutils')
 
 module.exports = (url) => {
   return function ($) {
-    $l = global.$logger
+    const $logger = global.$logger
     const protocol = getProtocol(url)
     const host = getHostname(url)
     $logger.debug('host', host)
@@ -22,12 +22,12 @@ module.exports = (url) => {
     $logger.debug('[scraped]', image)
     if (image) {
       $logger.debug('[image processing]')
-      //이미지 세팅
+      // 이미지 세팅
       if (image && image.indexOf('http') === 0) {
         // http 로 시작하면 그냥 사용
       } else if (image && image[0] === '/') {
         // image 경로가 / 로 시작한다면
-        //let urlObj = new URL(url);
+        // let urlObj = new URL(url);
         image = protocol + host + image
       } else if (image.startsWith('data:')) {
         // base64 문자열이라면 그대로 사용
@@ -65,18 +65,18 @@ module.exports = (url) => {
       desc = ''
     }
 
-    $l.verbose({
+    $logger.verbose({
       title,
       image,
       desc,
-      favicon,
+      favicon
     })
 
     return {
       title,
       image,
       desc,
-      favicon,
+      favicon
     }
   }
 }

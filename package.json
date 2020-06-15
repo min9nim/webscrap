@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "node test.js",
-    "build": "node build.js"
+    "build": "node build.js",
+    "standard": "standard",
+    "standard:fix": "standard --fix"
   },
   "license": "MIT",
   "dependencies": {
@@ -19,6 +21,7 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "standard": "^14.3.4"
   }
 }
