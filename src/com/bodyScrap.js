@@ -15,9 +15,9 @@ module.exports = (url) => {
     }
 
     // 글이미지
-    let image = $("meta[property='og:image']").attr('content')
+    let image =
+      $("meta[property='og:image']").attr('content') && $('img').attr('src')
     if (!image) {
-      image = $('img').attr('src')
       //이미지 세팅
       if (image && image.indexOf('http') === 0) {
         // http 로 시작하면 그냥 사용
