@@ -5,6 +5,7 @@ module.exports = (url) => {
     $l = global.$logger
     const protocol = getProtocol(url)
     const host = getHostname(url)
+    $logger.debug('host', host)
     // 글제목
     let title = $("meta[property='og:title']").attr('content')
     if (!title) {

@@ -635,10 +635,10 @@ mime@1.6.0:
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
 
-mingutils@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/mingutils/-/mingutils-0.3.3.tgz#c179a022dbbbcb94c398793f3bdd75725e70798f"
-  integrity sha512-CZrWMkHR3PGsxTShcpgZNWjI/9GGRjT8G/jO5aJk04cTiBjHGz0ghWs5BenyYwL92JYLRoGc5O4kLzqHWP1JqA==
+mingutils@^0.3.4:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/mingutils/-/mingutils-0.3.6.tgz#67264365b8c0c2b58f492ff2bfcbbb5f35745ad1"
+  integrity sha512-ANESxI+br6vcI3EzC8HdhbyBKeDc1EcRaGxiHxniaTKOn0cBpXS2LvGyHITJFGPE0Ta/CN90HPqlMsHwFEJjHw==
   dependencies:
     ramda "^0.26.1"
 
@@ -672,6 +672,11 @@ negotiator@0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
+
+node-fetch@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
+  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
 
 node-url-utils@^0.4.0:
   version "0.4.0"
