@@ -25,15 +25,6 @@ server.use(bodyParser.json())
 // RESTful API 라우터 등록
 server.post('/webscrap', webscrap)
 
-// 예외처리
-/**
- * 18.11.09
- * 위에서 예외가 발생해도 아래 오류처리 함수는 호출이 안된다??
- */
-server.use('/', function (err, req, res, next) {
-  console.error(err.stack)
-  res.status(500).send({ status: 'Fail', message: err.message })
-})
 
 // 서비스 포트
 //console.log("process.env.PORT = " + process.env.PORT)
