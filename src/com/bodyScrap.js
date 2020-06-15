@@ -15,9 +15,12 @@ module.exports = (url) => {
     }
 
     // 글이미지
+    $logger.debug('[scrap image]')
     let image =
-      $("meta[property='og:image']").attr('content') && $('img').attr('src')
-    if (!image) {
+      $("meta[property='og:image']").attr('content') || $('img').attr('src')
+    $logger.debug('[scraped]', image)
+    if (image) {
+      $logger.debug('[image processing]')
       //이미지 세팅
       if (image && image.indexOf('http') === 0) {
         // http 로 시작하면 그냥 사용
@@ -31,10 +34,11 @@ module.exports = (url) => {
         image = '[error] unknown image'
       }
     }
-
+    $logger.debug('[processed image]', image)
     // 파비콘
     let favicon = ''
     let faviconPath = $('link[rel="shortcut icon"]').attr('href')
+    $logger.verbose('faviconPath', faviconPath)
     if (!faviconPath) {
       faviconPath = $('link[rel="mask-icon"]').attr('href')
     }
@@ -47,7 +51,10 @@ module.exports = (url) => {
       } else {
         favicon = faviconPath.startsWith('//')
           ? protocol + faviconPath.slice(2)
-          : protocol + host + '/' + faviconPath
+          : protocol +
+            host +
+            (faviconPath.startsWith('/') ? '' : '/') +
+            faviconPath
       }
     }
 
