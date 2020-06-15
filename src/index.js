@@ -25,7 +25,6 @@ server.use(bodyParser.json())
 // RESTful API 라우터 등록
 server.post('/webscrap', webscrap)
 
-
 // 서비스 포트
 //console.log("process.env.PORT = " + process.env.PORT)
 const PORT = process.env.PORT || 3030
