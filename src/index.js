@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const cors = require('cors')
-const webscrapRouter = require('./router/webscrap-router')
+const webscrap = require('./router/webscrap')
 const logger = require('./logger')
 
 global.$logger = logger
@@ -23,7 +23,7 @@ index.use(morgan('combined')) // 서버 access 로그
 index.use(bodyParser.json())
 
 // RESTful API 라우터 등록
-index.use('/webscrap', webscrapRouter)
+index.post('/webscrap', webscrap)
 
 // 예외처리
 /**

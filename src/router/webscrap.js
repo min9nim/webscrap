@@ -1,14 +1,9 @@
 const webscrap = require('../com/webcrawler')
 const { sendErr } = require('../com/com')
 
-const post = {}
-const get = {}
-const put = {}
-const del = {}
+const cache ={}
 
-const cache = {}
-
-post['/'] = async (req, res) => {
+module.exports = async (req, res) => {
   const $l = global.$logger
   $l.verbose('req.body.url = ' + req.body.url)
   try {
@@ -32,5 +27,3 @@ post['/'] = async (req, res) => {
     // });
   }
 }
-
-module.exports = { post, get, put, del }
