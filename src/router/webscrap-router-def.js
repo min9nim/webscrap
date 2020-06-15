@@ -22,7 +22,7 @@ post['/'] = async (req, res) => {
       return
     }
     $l.log('[no-hit]', req.body.url)
-    let result = await webscrap(req.body.url)
+    const result = await webscrap(req.body.url)
     cache[req.body.url] = result
     res.jsonp(result)
   } catch (e) {
