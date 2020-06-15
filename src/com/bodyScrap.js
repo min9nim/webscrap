@@ -38,14 +38,9 @@ module.exports = (url) => {
     $logger.debug('[processed image]', image)
     // 파비콘
     let favicon = ''
-    let faviconPath = $('link[rel="shortcut icon"]').attr('href')
+    let faviconPath = $('link[rel="shortcut icon"]').attr('href') || $('link[rel="mask-icon"]').attr('href') || $('link[rel="icon"]').attr('href')
     $logger.verbose('faviconPath', faviconPath)
-    if (!faviconPath) {
-      faviconPath = $('link[rel="mask-icon"]').attr('href')
-    }
-    if (!faviconPath) {
-      faviconPath = $('link[rel="icon"]').attr('href')
-    }
+
     if (faviconPath) {
       if (faviconPath.startsWith('http')) {
         favicon = faviconPath
@@ -60,10 +55,7 @@ module.exports = (url) => {
     }
 
     // 글요약본
-    let desc = $("meta[property='og:description']").attr('content')
-    if (!desc) {
-      desc = ''
-    }
+    let desc = $("meta[property='og:description']").attr('content') || ''
 
     $logger.verbose({
       title,
