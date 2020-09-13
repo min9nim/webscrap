@@ -1479,10 +1479,10 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mingutils@^0.3.4:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/mingutils/-/mingutils-0.3.6.tgz#67264365b8c0c2b58f492ff2bfcbbb5f35745ad1"
-  integrity sha512-ANESxI+br6vcI3EzC8HdhbyBKeDc1EcRaGxiHxniaTKOn0cBpXS2LvGyHITJFGPE0Ta/CN90HPqlMsHwFEJjHw==
+mingutils@^0.3.6:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/mingutils/-/mingutils-0.3.7.tgz#37b1057fa507d3b90268e1e2e07956dba6b9fc5f"
+  integrity sha512-3LkNQl7R3nx/+dFArXQ+gEyPYNgtqw5olUxc4X9EMHDJaBnCVxRKDg73Sol7ciaOZS6LU2SkpRqIlytmQEA01w==
   dependencies:
     ramda "^0.26.1"
 
@@ -1556,10 +1556,10 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-node-fetch@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
-  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+node-fetch@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-url-utils@^0.4.0:
   version "0.4.0"
