@@ -1479,10 +1479,10 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mingutils@^0.3.4:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/mingutils/-/mingutils-0.3.6.tgz#67264365b8c0c2b58f492ff2bfcbbb5f35745ad1"
-  integrity sha512-ANESxI+br6vcI3EzC8HdhbyBKeDc1EcRaGxiHxniaTKOn0cBpXS2LvGyHITJFGPE0Ta/CN90HPqlMsHwFEJjHw==
+mingutils@^0.3.6:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/mingutils/-/mingutils-0.3.7.tgz#37b1057fa507d3b90268e1e2e07956dba6b9fc5f"
+  integrity sha512-3LkNQl7R3nx/+dFArXQ+gEyPYNgtqw5olUxc4X9EMHDJaBnCVxRKDg73Sol7ciaOZS6LU2SkpRqIlytmQEA01w==
   dependencies:
     ramda "^0.26.1"
 
@@ -1494,9 +1494,9 @@ minimatch@^3.0.4:
     brace-expansion "^1.1.7"
 
 minimist@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
 mkdirp@^0.5.1:
   version "0.5.5"
