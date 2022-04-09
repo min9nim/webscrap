@@ -1479,10 +1479,10 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mingutils@^0.3.4:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/mingutils/-/mingutils-0.3.6.tgz#67264365b8c0c2b58f492ff2bfcbbb5f35745ad1"
-  integrity sha512-ANESxI+br6vcI3EzC8HdhbyBKeDc1EcRaGxiHxniaTKOn0cBpXS2LvGyHITJFGPE0Ta/CN90HPqlMsHwFEJjHw==
+mingutils@^0.3.6:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/mingutils/-/mingutils-0.3.7.tgz#37b1057fa507d3b90268e1e2e07956dba6b9fc5f"
+  integrity sha512-3LkNQl7R3nx/+dFArXQ+gEyPYNgtqw5olUxc4X9EMHDJaBnCVxRKDg73Sol7ciaOZS6LU2SkpRqIlytmQEA01w==
   dependencies:
     ramda "^0.26.1"
 
@@ -1505,10 +1505,10 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "^1.2.5"
 
-moment@^2.26.0:
-  version "2.26.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.26.0.tgz#5e1f82c6bafca6e83e808b30c8705eed0dcbd39a"
-  integrity sha512-oIixUO+OamkUkwjhAVE18rAMfRJNsNe/Stid/gwHSOfHrOtw9EhAY2AHvdKZ/k/MggcYELFCJz/Sn2pL8b8JMw==
+moment@^2.29.2:
+  version "2.29.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.2.tgz#00910c60b20843bcba52d37d58c628b47b1f20e4"
+  integrity sha512-UgzG4rvxYpN15jgCmVJwac49h9ly9NurikMWGPdVxm8GZD6XjkKPxDTjQQ43gtGgnV3X0cAyWDdP2Wexoquifg==
 
 morgan@^1.9.1:
   version "1.9.1"
