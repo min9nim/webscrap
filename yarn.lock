@@ -1479,10 +1479,10 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mingutils@^0.3.4:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/mingutils/-/mingutils-0.3.6.tgz#67264365b8c0c2b58f492ff2bfcbbb5f35745ad1"
-  integrity sha512-ANESxI+br6vcI3EzC8HdhbyBKeDc1EcRaGxiHxniaTKOn0cBpXS2LvGyHITJFGPE0Ta/CN90HPqlMsHwFEJjHw==
+mingutils@^0.3.6:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/mingutils/-/mingutils-0.3.7.tgz#37b1057fa507d3b90268e1e2e07956dba6b9fc5f"
+  integrity sha512-3LkNQl7R3nx/+dFArXQ+gEyPYNgtqw5olUxc4X9EMHDJaBnCVxRKDg73Sol7ciaOZS6LU2SkpRqIlytmQEA01w==
   dependencies:
     ramda "^0.26.1"
 
@@ -1869,9 +1869,9 @@ qs@6.7.0:
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 ramda@^0.26.1:
   version "0.26.1"
